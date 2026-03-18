@@ -1,0 +1,32 @@
+ /* CSS - Estilos Customizados para as Teclas e Animações */
+        .white-key {
+            height: 250px;
+            width: 60px;
+            z-index: 1;
+            transition: all 0.1s ease;
+            box-shadow: 0 4px 0 #d1d5db, 0 8px 10px rgba(0,0,0,0.1);
+        }
+        .white-key:active, .white-key.active {
+            background-color: #f3f4f6;
+            transform: translateY(4px);
+            box-shadow: 0 0px 0 #d1d5db, 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .black-key {
+            height: 150px;
+            width: 40px;
+            z-index: 2;
+            margin-left: -20px;
+            margin-right: -20px;
+            background: linear-gradient(to bottom, #1f2937, #000);
+            transition: all 0.1s ease;
+            box-shadow: 0 4px 0 #000, 0 8px 10px rgba(0,0,0,0.3);
+        }
+        .black-key:active, .black-key.active {
+            background: #374151;
+            transform: translateY(4px);
+            box-shadow: 0 0px 0 #000, 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .key-label {
+            pointer-events: none;
+            user-select: none;
+        }
